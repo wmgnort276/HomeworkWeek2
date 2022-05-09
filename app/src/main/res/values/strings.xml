@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">InputCcontrol</string>
+    <string name="student_information">Student Information</string>
+    <string name="mssv">MSSV</string>
+    <string name="enter_your_student_id">Enter your Student ID</string>
+    <string name="name">Name</string>
+    <string name="cccd">CCCD</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="dob">DOB</string>
+    <string name="select_your_date_of_birth">Select Your Date of Birth</string>
+    <string name="address">Address</string>
+    <string name="current_address">Current Address</string>
+    <string name="finish">Finish</string>
+    <string name="agree">Agree</string>
 </resources>
