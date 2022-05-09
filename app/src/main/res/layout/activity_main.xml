@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"
+                android:text="Student Information"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/mssv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"
+                android:text="MSSV"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+            <EditText
+                android:id="@+id/editMssv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:ems="10"
+                android:hint="Enter your Student ID"
+                android:inputType="textPersonName"
+                app:layout_constraintBaseline_toBaselineOf="@+id/mssv"
+                app:layout_constraintStart_toEndOf="@+id/mssv" />
+
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mssv"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"
+                android:textSize="20dp"
+                />
+
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:ems="10"
+                android:hint="Enter your name"
+                android:inputType="textPersonName"
+                app:layout_constraintBaseline_toBaselineOf="@+id/Name"
+                app:layout_constraintStart_toEndOf="@+id/Name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cccd"
+                android:text="CCCD"
+                app:layout_constraintTop_toBottomOf="@+id/Name"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"
+                android:textSize="20dp"
+                />
+
+            <EditText
+                android:id="@+id/editCCCD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:ems="10"
+                android:hint="CCCD"
+                android:inputType="textPersonName"
+                app:layout_constraintBaseline_toBaselineOf="@+id/cccd"
+                app:layout_constraintStart_toEndOf="@+id/cccd" />
+
+            <TextView
+                android:id="@+id/phoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textSize="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/cccd"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"
+                />
+
+            <EditText
+                android:id="@+id/editPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="24dp"
+                android:ems="10"
+                android:hint="Phone Number"
+                android:inputType="textPersonName"
+                app:layout_constraintBaseline_toBaselineOf="@+id/phoneNumber"
+                android:layout_marginLeft="24dp"
+                app:layout_constraintStart_toEndOf="@+id/phoneNumber" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/phoneNumber"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"
+                android:textSize="20dp"
+                />
+
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                app:layout_constraintBaseline_toBaselineOf="@+id/email"
+                app:layout_constraintStart_toEndOf="@+id/email"
+                android:layout_marginLeft="24dp"
+                />
+
+            <TextView
+                android:id="@+id/dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DOB"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Select Your Date of Birth"
+                app:layout_constraintBaseline_toBaselineOf="@+id/dob"
+                app:layout_constraintStart_toEndOf="@+id/dob"
+                android:layout_marginLeft="24dp"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dob"
+                android:textSize="20dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="24dp"
+                />
+
+            <EditText
+                android:id="@+id/editAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="address"
+                app:layout_constraintBaseline_toBaselineOf="@+id/address"
+                app:layout_constraintStart_toEndOf="@+id/address"
+                android:layout_marginLeft="24dp"/>
+
+            <TextView
+                android:id="@+id/curAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Address"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/address"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="24dp"
+                />
+
+            <EditText
+                android:id="@+id/editCurAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Current Address"
+                app:layout_constraintStart_toEndOf="@+id/curAddress"
+                android:layout_marginLeft="24dp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/curAddress"
+                />
+
+            <RadioGroup
+                android:id="@+id/major"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/curAddress"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chose your major"
+                    android:textSize="20dp"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KTMT"
+                    android:layout_marginLeft="20dp"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KHMT"
+                    android:layout_marginLeft="20dp"
+                    />
+            </RadioGroup>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/skills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/major">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Skills"
+                    android:textSize="20dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="C" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Python" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Java" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <CheckBox
+                android:id="@+id/agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="24dp"
+                android:text="Agree"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/skills"
+                android:layout_marginTop="24dp"
+                />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="24dp"
+                android:text="Finish"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/agree"
+                android:onClick="handleFinish"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
